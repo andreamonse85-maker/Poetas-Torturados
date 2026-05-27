@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1; charset=utf-8" />
+<title>PC centro</title>
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+a:link {
+	color: #e65f5c;
+}
+a:visited {
+	color: #e0a96d;
+}
+-->
+</style></head>
+<style type="text/css">
+<!--
+h1 {color:#f5ece1 ; font-size:36px ; font-family:"Courier New", Courier, monospace}
+.Estilo1 {color:#f5ece1 ; font-size:24px ; font-family:Georgia, "Times New Roman", Times, serif}
+h2 {color:#f5ece1 ; font-size:30px ; font-family:"Times New Roman", Times, serif}
+img, video, table, div {max-width:100%; box-sizing:border-box}
+-->
+</style>
+<body bgcolor="#8f001a" onload="MM_preloadImages('Assets/Images/BP.jpg','Assets/Images/BI.jpg','Assets/Images/BR.jpg')">
+<div align="center"> 
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="PF.html" target="_top" onclick="MM_nbGroup('down','group1','ABR','',1)" onmouseover="MM_nbGroup('over','ABR','Assets/Images/BP.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="Assets/Images/BPF.jpg" alt="" name="ABR" width="500" height="50" border="0" id="ABR" onload="" /></a></td>
+      <td><a href="index.html" target="_top" onclick="MM_nbGroup('down','group1','ABP','',1)" onmouseover="MM_nbGroup('over','ABP','Assets/Images/BI.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="Assets/Images/BIF.jpg" alt="" name="ABP" width="500" height="50" border="0" id="ABP" onload="" /></a></td>
+      <td><a href="RTF.html" target="_top" onclick="MM_nbGroup('down','group1','ABI','',1)" onmouseover="MM_nbGroup('over','ABI','Assets/Images/BR.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="Assets/Images/BRF.jpg" alt="" name="ABI" width="500" height="50" border="0" id="ABI" onload="" /></a></td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+<h1> <a name="I" id="I">Índice</a> </h1>
+<ol class="Estilo1"> 
+<li> <a href="#ID">Información Gemeral</a> </li>
+<li> <a href="#SI">Primeras obras de Lorca</a> </li>
+<li> <a href="#TI">Regreso a España y muerte</a> </li>
+</ol>
+<hr />
+<h2> <a name="IG" id="IG">¿Quién era Federico Garcia?</a> </h2>
+<table width="1100" border="0">
+  <tr>
+    <td width="300" height="300"><img src="Assets/Images/IFG.jpg" width="300" height="300" /></td>
+    <td width="784"><p align="justify" class="Estilo1">El 5 de junio de 1898 nació en Fuente Vaqueros, Granada, Federico García Lorca. Considerado uno de los poetas españoles más brillantes del siglo XX, la obra de Lorca obtuvo un gran reconocimiento ya en su época, pero finalmente el estallido de la Guerra Civil española en 1936 acabaría con la vida del poeta, que murió fusilado en Granada.
+En la parte occidental de la comarca de la Vega de Granada, la población granadina de Fuente Vaqueros vio nacer el 5 de junio de 1898 a uno de los poetas más brillantes de la historia de España: Federico García Lorca. El autor español más celebrado del siglo XX, símbolo de todos los desaparecidos en la Guerra Civil española y cuyos restos, más de 80 años después de su muerte, aún permanecen en una fosa común.</p></td>
+  </tr>
+</table>
+<p align="center" class="Estilo1"><a href="#I">Ir a índice</a></p>
+<hr />
+<h2> <a name="SI" id="SI">Prineras obras de Lorca</a> </h2>
+<table width="1100" border="0">
+  <tr>
+    <td width="734" height="350"><p align="justify" class="Estilo1">La Residencia de Estudiantes de Madrid, a la cual se trasladó en 1919, era en aquel entonces un hervidero intelectual. Por ella pasaron figuras de la talla de Albert Einstein, John Maynard Keynes o madame Curie, personajes que influyeron enormemente en la formación intelectual de Lorca. Según palabras de su amigo Adolfo Salazar, conocer a Luis Buñuel, Rafael Alberti o Salvador Dalí supuso para Federico huir del tedio intelectual que tanto odiaba.
+<br />
+<br />
+En 1921, Lorca publicó Libro de poemas y estrenó su primera obra teatral, El maleficio de la mariposa. En mayo de ese año, regresó a Granada donde conoció al famoso compositor Manuel de Falla, con quien emprendió varios proyectos en torno a la música y el cante jondo. El día de Reyes de 1923, Falla interpretó una adaptación lorquiana de un cuento andaluz atribuido a Cervantes llamado La niña que riega la albahaca y el príncipe preguntón así como El Misterio de los Reyes Magos, un auto sacramental del siglo XIII.</p></td>
+	<td width="350"><img src="Assets/Images/IFG1.jpg" width="350" height="350" /></td>
+  </tr>
+</table>
+<p align="center" class="Estilo1"><a href="#I">Ir a índice</a></p>
+<hr /> 
+<h2> <a name="TI" id="TI">Regreso a España y muerte</a> </h2>
+<table width="1100" border="0">
+  <tr>
+    <td width="400" height="400"><img src="Assets/Images/IFG2.jpg" width="400" height="400" /></td>
+    <td width="684"><p align="justify" class="Estilo1">Tras una estancia en Buenos Aires, Lorca regresó a España en 1934, donde la situación política era insostenible y se respiraba un clima prebélico que hacía presagiar el estallido de una guerra civil. Mientas el mundo entero admiraba a Lorca como "el Homero español", las críticas hacia él se recrudecieron en el contexto de tensión previo al conflicto, y aunque se resistió a la presión de sus amigos para afiliarse al Partido Comunista, sufrió las arremetidas de los conservadores por su amistad con personalidades abiertamente socialistas como la actriz Margarita Xirgu. La popularidad de García Lorca y sus numerosas declaraciones contra las injusticias sociales le convirtieron en un personaje incómodo para la derecha.</p></td>
+  </tr>
+</table>
+<table width="1100">
+<tr>
+<td>
+<p align="justify" class="Estilo1">A día de hoy la muerte del poeta aún suscita numerosas preguntas. Últimamente han surgido algunas teorías, como la planteada por el investigador Miguel Caballero Pérez, que postula que en la muerte de García Lorca estarían directamente implicadas las familias Roldán y Alba, enfrentadas con el padre del poeta por viejas rencillas relacionadas con el reparto de unas tierras compradas a medias. Siempre según este autor, aprovechando el golpe militar y la publicación, en la primavera de 1936, de La Casa de Bernarda Alba, un libro donde Lorca hace una crítica ácida y feroz de estas familias, fue cuando, al parecer, estas decidieron ajustar cuentas con el poeta. </p>
+</td>
+</tr>
+</table>
+<p align="center" class="Estilo1"><a href="#I">Ir a índice</a></p>
+</div>
+</body>
+</html>

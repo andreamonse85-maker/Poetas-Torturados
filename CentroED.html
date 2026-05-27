@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+a:link {
+	color: #7a8b7b;
+}
+a:visited {
+	color: #d4a5a5;
+}
+-->
+</style></head>
+<style type="text/css">
+<!--
+h1 {color:#764640 ; font-size:36px ; font-family:Georgia, "Times New Roman", Times, serif}
+.Estilo1 {color:#764640 ; font-size:24px ; font-family:Georgia, "Times New Roman", Times, serif}
+h2 {color:#764640 ; font-size:30px ; font-family:"Times New Roman", Times, serif}
+img, video, table, div {max-width:100%; box-sizing:border-box}
+-->
+</style>
+<body bgcolor="#f4f0ea" onload="MM_preloadImages('Assets/Images/BP.jpg','Assets/Images/BI.jpg','Assets/Images/BR.jpg')">
+<div align="center">
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="PE.html" target="_top" onclick="MM_nbGroup('down','group1','ABR','',1)" onmouseover="MM_nbGroup('over','ABR','Assets/Images/BP.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="Assets/Images/BPE.jpg" alt="" name="ABR" width="500" height="50" border="0" id="ABR" onload="" /></a></td>
+      <td><a href="index.html" target="_top" onclick="MM_nbGroup('down','group1','ABP','',1)" onmouseover="MM_nbGroup('over','ABP','Assets/Images/BI.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="Assets/Images/BIE.jpg" alt="" name="ABP" width="500" height="50" border="0" id="ABP" onload="" /></a></td>
+      <td><a href="RTE.html" target="_top" onclick="MM_nbGroup('down','group1','ABI','',1)" onmouseover="MM_nbGroup('over','ABI','Assets/Images/BR.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="Assets/Images/BRE.jpg" alt="" name="ABI" width="500" height="50" border="0" id="ABI" onload="" /></a></td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+<h1> <a name="I" id="I">Índice</a> </h1>
+<ol class="Estilo1"> 
+<li> <a href="#ID">Información Gemeral</a> </li>
+<li> <a href="#SI">Estudios y juventud</a> </li>
+<li> <a href="#TI">Primeras ediciones y legado literario</a> </li>
+</ol>
+<hr />
+<h2> <a name="IG" id="IG">¿Quién era Emily Dickinson?</a> </h2>
+<table width="1100" border="0">
+  <tr>
+    <td width="300" height="300"><img src="Assets/Images/IED.jpg" width="300" height="300" /></td>
+    <td width="784"><p align="justify" class="Estilo1"> Emily Dickinson nació el 10 de diciembre de 1830 en Amherst, Massachusetts (Estados Unidos), en el seno de una familia acomodada y culta. Su padre, el abogado Edward Dickinson, fue miembro del Congreso y tesorero del Amherst College. Su madre, Emily Norcross, se dedicó al cuidado del hogar y a criar a Emily y sus dos hermanos (Austin, el mayor, y Lavinia, la pequeña). Ambos se encargaron de que sus tres hijos recibieran una buena educación, de ahí que, en 1840 –dos años después de que la Academia de Amherst aceptara mujeres— matricularon a Emily para que empezara el colegio. </p></td>
+  </tr>
+</table>
+<p align="center" class="Estilo1"><a href="#I">Ir a índice</a></p>
+<hr />
+<h2> <a name="SI" id="SI">Estudios y juventud</a> </h2>
+<table width="1100" border="0">
+  <tr>
+    <td width="734" height="350"><p align="justify" class="Estilo1"> Durante siete años, Emily estudió literatura, historia, religión, geografía, matemáticas, biología, griego y latín. Además, daba clases de piano con su tía, tenía canto los domingos y aprendió floricultura, horticultura y jardinería. Tras atender a una clase de botánica, Emily quedó tan fascinada que empezó a elaborar su propio herbario, en el que acumuló cientos de plantas y flores prensadas, con sus respectivos nombres en latín.
+<br />
+<br />
+Dada su inagotable sed de conocimiento, Emily profundizó por su cuenta en otros estudios. Pronto aprendió los nombres de todas las estrellas y constelaciones. También memorizó el nombre de las decenas de flores silvestres que crecían en la región y sabía perfectamente dónde encontrarlas. Todo este conocimiento lo plasmó en su producción poética. </p></td>
+	<td width="350"><img src="Assets/Images/IED1.jpg" width="350" height="350" /></td>
+  </tr>
+</table>
+<p align="center" class="Estilo1"><a href="#I">Ir a índice</a></p>
+<hr /> 
+<h2> <a name="TI" id="TI">Primeras ediciones y legado literario</a> </h2>
+<table width="1100" border="0">
+  <tr>
+    <td width="400" height="400"><img src="Assets/Images/IED2.jpg" width="400" height="400" /></td>
+    <td width="684"><p align="justify" class="Estilo1"> En los siguientes años, la obra de Emily Dickinson empezó a ver la luz. Los poemas se publicaron en varias ediciones, siguiendo un orden completamente arbitrario (ya que la autora nunca puso fecha a sus versos) y quedando divididos en cuatro grupos: Vida, Naturaleza, Amor y, por último, Tiempo y eternidad. La edición en inglés más completa de la obra de Dickinson se publicó en 1998, más de cien años después de la obra de la autora. Se desconoce la razón por la que Emily Dickinson se negó a compartir sus creaciones en vida. Muchos apuntan a que, más allá del éxito, lo que la autora buscaba era perfeccionar y desarrollar al máximo su voz poética.
+<br /> 
+En sus versos, caracterizados por una puntuación propia y su peculiar uso de las mayúsculas, Dickinson habla de los cambios de estación, de las flores del campo, de la muerte, el amor, la enfermedad, la pérdida, la esperanza y una infinidad de temas impregnados de su extraordinaria sensibilidad, pasión por la naturaleza y descomunal capacidad de observación.</p></td>
+  </tr>
+</table>
+<table width="1100">
+<tr>
+<td>
+<p align="justify" class="Estilo1">La poesía de Emily Dickinson es única y prácticamente inclasificable. Por eso, sus versos han ido ganando importancia y reconocimiento a medida que han pasado las décadas, acrecentando la sensación de que Emily Dickinson escribió para los lectores del futuro. “Si tengo la sensación física de que me levantan la tapa de los sesos, sé que eso es poesía”, afirmó la autora. Su legado, sin duda alguna, hace más que justicia a esa apasionante experiencia que ella definió como poesía. </p>
+</td>
+</tr>
+</table>
+<p align="center" class="Estilo1"><a href="#I">Ir a índice</a></p>
+</div>
+</body>
+</html>
